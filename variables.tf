@@ -44,3 +44,14 @@ variable "deployment_fqdn" {
   description = "FQDN for Google managed SSL cert"
   type        = string
 }
+
+variable "allow_unauth" {
+  description = "Allow unauthenticated invocations"
+  type        = bool
+}
+
+variable "is_public_deploy" {
+  description = "Ingress controller, accept traffic from public internet or internal network"
+  type        = bool
+}
+
