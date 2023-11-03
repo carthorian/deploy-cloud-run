@@ -57,9 +57,10 @@ module "cloud-run" {
   location             = var.location
   image_name           = "us-docker.pkg.dev/cloudrun/container/hello"
   deployment_name      = var.deployment_name
-  max_scale            = 3
-  allow_unauth         = true
-  is_public_deploy     = false
+  max_scale            = var.max_scale
+  min_scale            = var.min_scale
+  allow_unauth         = var.allow_unauth
+  is_public_deploy     = var.is_public_deploy
   network              = local.network
   depends_on           = [module.service-account, google_project_service.svc_cloudres, google_project_service.svc_run, google_project_service.svc_iam]
 }
