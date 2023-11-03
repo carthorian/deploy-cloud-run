@@ -32,7 +32,7 @@ min_scale           = 1                           # Minimum number of instances
 ```
 
 # Diagram
-![alt text](https://github.com/carthorian/deploy-cloud-run/blob/main/image.jpg?raw=true)
+![alt text](https://github.com/carthorian/deploy-cloud-run/blob/main/diagram.jpg?raw=true)
 
 # SSL Certificate
 If you want to use Google managed SSL certificates, you need to register your domian to your GCP account. Please check this [link](https://cloud.google.com/domains/docs/register-domain)
