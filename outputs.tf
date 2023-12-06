@@ -1,4 +1,4 @@
-output "Clour_Run_Url" {
+output "cloud_run_url" {
   value = module.cloud-run.cloud_run_url
 }
 
